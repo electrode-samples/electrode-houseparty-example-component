@@ -48,7 +48,8 @@ export default (type, size, rotateVal) => {
       padding: `${size * CONTAINER.paddingDivisor}em`,
       borderRadius: `50%`,
       display: `inline-block`,
-      margin: `${size * CONTAINER.marginDivisor}em`
+      margin: `${size * CONTAINER.marginDivisor}em`,
+      float: `right`
     };
   }
 
