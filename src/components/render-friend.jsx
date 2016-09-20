@@ -6,12 +6,12 @@ import style from "../helpers/graph-styles";
 const DEFAULT_SIZE = 15;
 const DEGREES_OF_COOL = 360;
 
-const RenderFriend = ({friend, styleObj, className}) => {
+const RenderFriend = ({friend, styleObj, className, contrLink}) => {
 
   const { name, img, profile, friends } = friend;
   let { size } = friend;
   const parentFriend = { name, img, profile };
-  size = size ? size : DEFAULT_SIZE;
+  size = size || DEFAULT_SIZE;
 
   const bgImg = {backgroundImage: `url(${img})`};
   let applyStyle = styleObj
@@ -32,17 +32,28 @@ const RenderFriend = ({friend, styleObj, className}) => {
         <RenderFriend
           key={friendObj.name}
           friend={friendObj}
-          styleObj={style("child", size, rotateVal)}/>
+          styleObj={style("child", size, rotateVal)}
+          contrLink={friendObj.profile}/>
         );
     });
   };
 
-  return (
+  const renderComponent = () => (
     <div className={applyClass} style={applyStyle}>
       {!!friends && renderFriends(friends)}
       {!!friends && <RenderFriend friend={parentFriend} styleObj={style("parent", size)}/>}
     </div>
   );
+
+  if (contrLink) {
+    return (
+      <a href={contrLink} target="_blank">
+        {renderComponent()}
+      </a>
+    );
+  }
+
+  return renderComponent();
 };
 
 RenderFriend.propTypes = {
