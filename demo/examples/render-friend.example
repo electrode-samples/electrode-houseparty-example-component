@@ -1,4 +1,8 @@
 <RenderFriend
   friend={
-    {name: "John", img: "//goo.gl/dL5MXT"}
+    {name: "John", img: "//goo.gl/I9utJF", friends: [
+      {name: "Redux", img: "//goo.gl/MGQ3lp", profile: "https://github.com/reactjs/redux"},
+      {name: "Webpack", img: "//goo.gl/zgxe8s", profile: "https://github.com/webpack/webpack"},
+      {name: "node", img: "//goo.gl/hxmCEE", profile: "https://github.com/nodejs/node"}
+    ]}
   } />
