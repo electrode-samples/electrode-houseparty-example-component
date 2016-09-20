@@ -70,12 +70,12 @@ HouseParty.displayName = "HouseParty";
 HouseParty.propTypes = {
   ourFriends: PropTypes.array,
   message: PropTypes.func,
-  invitees: PropTypes.array,
+  invitees: PropTypes.array.isRequired,
   view: PropTypes.object,
   toggleGuest: PropTypes.func
 };
 
 HouseParty.defaultProps = {
-  message: `<p>Let's party! Un-comment the all the commented-out lines in the
-  playground then check the boxes on the GuestList to invite our friends to the party!</p>`
+  message: () => (<p>Let's party! Un-comment the all the commented-out lines in the
+  playground then check the boxes on the GuestList to invite our friends to the party!</p>)
 };
