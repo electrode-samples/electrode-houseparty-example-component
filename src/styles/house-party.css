@@ -47,16 +47,14 @@ p {
   background-color: #474747;
   padding: 10em 2em 2em 2em;
   border-radius: 10px;
-  min-height: 35vh;
+  min-height: 56vh;
 }
 .container {
-  width: 50vw;
+  width: 60vw;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10%;
-
+  margin-top: 5%;
   position: relative;
-  transition: filter .7s ease-in-out;
 }
 .container:before {
   content: '';
