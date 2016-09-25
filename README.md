@@ -13,7 +13,7 @@ npm install
 npm start
 ```
 
-Then open [`localhost:8000`](http://localhost:4000) in a browser.
+Then open [`localhost:4000`](http://localhost:4000) in a browser.
 
 
 ## Installation
