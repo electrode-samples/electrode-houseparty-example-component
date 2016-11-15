@@ -1,6 +1,7 @@
 # house-party
 
-__COMPONENT DESCRIPTION GOES HERE__
+## Build With Us
+This Electrode component example is created by following our [Getting Started](https://electrode-io.github.io/docs/build_component.html): Intermediate Guide. We start with our out-the-box Electrode Component generator and you will learn how to make a dynamic reusable component with a live demo.
 
 
 ## Demo & Examples
@@ -12,7 +13,7 @@ npm install
 npm start
 ```
 
-Then open [`localhost:8000`](http://localhost:8000) in a browser.
+Then open [`localhost:4000`](http://localhost:4000) in a browser.
 
 
 ## Installation
@@ -28,21 +29,11 @@ npm install house-party --save
 
 ## Usage
 
-__EXPLAIN USAGE HERE__
-
 ```
 var HouseParty = require('house-party');
 
 <HouseParty>Example</HouseParty>
 ```
-
-### Properties
-
-* __DOCUMENT PROPERTIES HERE__
-
-### Notes
-
-__ADDITIONAL USAGE NOTES__
 
 
 ## Development (`src`, `lib` and the build process)
@@ -51,8 +42,8 @@ __ADDITIONAL USAGE NOTES__
 
 To build, watch and serve the examples (which will also watch the component source), run `npm start`. If you just want to watch changes to `src` and rebuild `lib`, run `npm run watch` (this is useful if you are working with `npm link`).
 
-## License
+Built with :heart: by [Team Electrode](https://github.com/orgs/electrode-io/people) @WalmartLabs.
 
-__PUT LICENSE HERE__
+## License
 
 Copyright (c) 2016 james-mcintyre.
